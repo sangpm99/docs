@@ -21,8 +21,8 @@ const fullName = computed({
 
 <template>
   <div>
-    <input v-model="firstName" placeholder="First Name" type="text" />
-    <input v-model="lastName" placeholder="Last Name" type="text" />
-    <input v-model="fullName" placeholder="Full Name" type="text" />
+    <input v-model.trim="firstName" placeholder="First Name" type="text" />
+    <input v-model.trim="lastName" placeholder="Last Name" type="text" />
+    <input v-model.trim="fullName" placeholder="Full Name" type="text" />
   </div>
 </template>
